@@ -1,0 +1,9 @@
+---
+include:
+- "**/*.rb"
+require: []
+domains: []
+reporters:
+- rubocop
+plugins: []
+max_files: 5000

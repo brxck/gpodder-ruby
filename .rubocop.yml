@@ -1,0 +1,25 @@
+AllCops:
+  TargetRubyVersion: 2.4
+
+Style/Documentation:
+  Include:
+    - lib/**/*.rb
+
+Style/EmptyMethod:
+  EnforcedStyle: expanded
+
+Style/StringLiterals:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Metrics/LineLength:
+  AllowHeredoc: true
+  AllowURI: true
+  URISchemes:
+    - https
+    - http
+  Exclude:
+    - Gemfile
+    - Rakefile

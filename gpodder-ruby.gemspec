@@ -1,7 +1,7 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "gpodder/ruby/version"
+require "gpodder/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "gpodder-ruby"
@@ -34,6 +34,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "minitest", "~> 5.0"
   spec.add_development_dependency "vcr"
   spec.add_development_dependency "webmock"
+  spec.add_development_dependency "rubocop"
+  spec.add_development_dependency "solargraph"
 
   spec.add_dependency "faraday"
   spec.add_dependency "json"
