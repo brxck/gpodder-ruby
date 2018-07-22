@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://gpodder.net/clientconfig.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.14.0 (Ubuntu)
+      Date:
+      - Sun, 22 Jul 2018 21:44:56 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '183'
+      Last-Modified:
+      - Sun, 18 Feb 2018 13:56:53 GMT
+      Connection:
+      - keep-alive
+      Etag:
+      - '"5a898625-b7"'
+      Expires:
+      - Sun, 05 Aug 2018 21:44:56 GMT
+      Cache-Control:
+      - max-age=1209600
+      Accept-Ranges:
+      - bytes
+    body:
+      encoding: UTF-8
+      string: |
+        {
+            "mygpo":  {
+                "baseurl": "http://gpodder.net/test"
+            },
+
+            "mygpo-feedservice": {
+                "baseurl": "http://feeds.gpodder.net/"
+            },
+
+            "update_timeout":    604800
+        }
+    http_version: 
+  recorded_at: Sun, 22 Jul 2018 21:44:56 GMT
+recorded_with: VCR 4.0.0
