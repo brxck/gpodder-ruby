@@ -1,4 +1,5 @@
 require "faraday"
+require "faraday_middleware"
 require "json"
 
 module GPodder
@@ -11,7 +12,12 @@ module GPodder
       response = Faraday.get "https://gpodder.net/clientconfig.json"
       @baseurl = JSON.parse(response.body).dig("mygpo", "baseurl") ||
                  "https://gpodder.net/"
-      @connect = Faraday.new(url: @baseurl)
+      @connect = Faraday.new(url: @baseurl) do |conn|
+        conn.request  :url_encoded
+        conn.response :json, content_type: /\bjson$/
+        conn.adapter  Faraday.default_adapter
+      end
+    end
     end
   end
 end
