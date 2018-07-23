@@ -3,6 +3,7 @@ require "faraday_middleware"
 require "json"
 
 require_relative "client/requests"
+require_relative "client/directory"
 
 module GPodder
   # Makes requests against gpodder.net API.

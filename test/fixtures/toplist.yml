@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://gpodder.net/toplist/1.json
+    uri: http://gpodder.net/toplist/3.json?scale_logo=64
     body:
       encoding: US-ASCII
       string: ''
@@ -21,17 +21,17 @@ http_interactions:
       Server:
       - nginx/1.14.0 (Ubuntu)
       Date:
-      - Mon, 23 Jul 2018 03:29:24 GMT
+      - Mon, 23 Jul 2018 17:13:09 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '779'
+      - '2371'
       Connection:
       - keep-alive
       Access-Control-Allow-Origin:
       - "*"
       Expires:
-      - Mon, 23 Jul 2018 04:29:24 GMT
+      - Mon, 23 Jul 2018 18:13:09 GMT
       Cache-Control:
       - max-age=3600
       Vary:
@@ -49,7 +49,24 @@ http_interactions:
         and relax, partner.", "subscribers": 3321, "subscribers_last_week": 3321,
         "logo_url": "http://sixgun.org/files/linuxoutlaws.jpg", "scaled_logo_url":
         "http://gpodder.net/logo/64/fa9/fa9fd87a4f9e488096e52839450afe0b120684b4",
-        "website": "http://sixgun.org", "mygpo_link": "http://gpodder.net/podcast/linux-outlaws-mp3"}]'
+        "website": "http://sixgun.org", "mygpo_link": "http://gpodder.net/podcast/linux-outlaws-mp3"},
+        {"url": "http://feeds.thisamericanlife.org/talpodcast", "title": "This American
+        Life", "description": "This American Life is a weekly public radio show, heard
+        by 2.2 million people\non more than 500 stations. Another 2.5 million people
+        download the weekly\npodcast. It is hosted by Ira Glass, produced in collaboration
+        with Chicago\nPublic Media, delivered to s", "subscribers": 3212, "subscribers_last_week":
+        3212, "logo_url": "http://www.thisamericanlife.org/sites/all/themes/thislife/images/logo-square-1400.jpg",
+        "scaled_logo_url": "http://gpodder.net/logo/64/1b1/1b153fd666f8d73a4a470246ade8620513b47da6",
+        "website": "https://www.thisamericanlife.org", "mygpo_link": "http://gpodder.net/podcast/this-american-life"},
+        {"url": "http://leo.am/podcasts/floss", "title": "FLOSS Weekly (MP3)", "description":
+        "We''re not talking dentistry here; FLOSS all about Free Libre Open Source\nSoftware.
+        Join host Randal Schwartz and his rotating panel of co-hosts every\nWednesday
+        as they talk with the most interesting and important people in the\nOpen Source
+        and Free Software community. Records live every Wednesday at\n12:30pm Eastern
+        / 9:30am Pacific / 16:30 UTC.", "subscribers": 2613, "subscribers_last_week":
+        2613, "logo_url": "https://elroycdn.twit.tv/sites/default/files/styles/twit_album_art_2048x2048/public/images/shows/floss_weekly/album_art/audio/floss1400audio.jpg?itok=bQyTXyOk",
+        "scaled_logo_url": "http://gpodder.net/logo/64/f9a/f9a539445fb5f0c76f3d2ce4daf4f38abb841324",
+        "website": "https://twit.tv/shows/floss-weekly", "mygpo_link": "http://gpodder.net/podcast/floss-weekly-mp3"}]'
     http_version: 
-  recorded_at: Mon, 23 Jul 2018 03:29:24 GMT
+  recorded_at: Mon, 23 Jul 2018 17:13:09 GMT
 recorded_with: VCR 4.0.0
