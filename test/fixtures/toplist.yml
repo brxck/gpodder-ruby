@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://gpodder.net/toplist/1.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.14.0 (Ubuntu)
+      Date:
+      - Mon, 23 Jul 2018 03:29:24 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '779'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Expires:
+      - Mon, 23 Jul 2018 04:29:24 GMT
+      Cache-Control:
+      - max-age=3600
+      Vary:
+      - Accept-Language, Cookie
+      Content-Language:
+      - en
+    body:
+      encoding: UTF-8
+      string: '[{"url": "http://feeds.feedburner.com/linuxoutlaws", "title": "Linux
+        Outlaws", "description": "Two pragmatic geeks talk about the latest news concerning
+        Linux, free and open\ntechnology or anything else they deem noteworthy which
+        may include such absurd\nthings as hockey or bands you never heard of. This
+        means there''s many a joke\nand derailed conversation along the way, so don''t
+        come here expecting only\nLinux or software freedom talk \u2014 just sit back
+        and relax, partner.", "subscribers": 3321, "subscribers_last_week": 3321,
+        "logo_url": "http://sixgun.org/files/linuxoutlaws.jpg", "scaled_logo_url":
+        "http://gpodder.net/logo/64/fa9/fa9fd87a4f9e488096e52839450afe0b120684b4",
+        "website": "http://sixgun.org", "mygpo_link": "http://gpodder.net/podcast/linux-outlaws-mp3"}]'
+    http_version: 
+  recorded_at: Mon, 23 Jul 2018 03:29:24 GMT
+recorded_with: VCR 4.0.0
