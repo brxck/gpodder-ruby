@@ -13,4 +13,12 @@ class RequestATest < Minitest::Test
       assert_kind_of Array, response
     end
   end
+
+  def test_it_returns_resources
+    VCR.use_cassette("podcast_data") do
+      response = @client.get("/api/2/data/podcast.json"), "http://adventurezone.libsyn.com/rss#_=_"
+      assert_kind_of GPodder::Client::Resource, response
+      # assert_equal "The Adventure Zone", response.title
+    end
+  end
 end

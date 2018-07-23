@@ -16,11 +16,15 @@ module GPodder
 
     def request(method, path, options)
       response = connect.send(method, path, options)
-      response.body
+      parse_data(response.body)
     end
 
-    def parse_body(body)
-
+    def parse_data(data)
+      case data
+      when Hash then Resource.new(data)
+      when Array then Collection.new(data)
+      else data
+      end
     end
   end
 end
