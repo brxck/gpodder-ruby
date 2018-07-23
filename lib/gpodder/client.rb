@@ -4,6 +4,7 @@ require "json"
 
 require_relative "client/requests"
 require_relative "client/directory"
+require_relative "client/authentication"
 
 module GPodder
   # Makes requests against gpodder.net API.
