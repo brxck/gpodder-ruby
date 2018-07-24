@@ -7,3 +7,6 @@ require "faraday"
 
 module GPodder
 end
+
+# A global instance of GPodder::Client
+GPod = GPodder::Client.new
