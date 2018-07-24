@@ -28,5 +28,9 @@ module GPodder
 
       @username = nil
     end
+
+    def logged_in?
+      !@username.nil?
+    end
   end
 end
