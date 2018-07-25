@@ -1,4 +1,4 @@
-module GPodder
+module Gpodder
   class Client
     def top_tags(count)
       get("/api/2/tags/#{count}.json")

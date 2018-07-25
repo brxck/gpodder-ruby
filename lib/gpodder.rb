@@ -5,8 +5,8 @@ require_relative "gpodder/version"
 
 require "faraday"
 
-module GPodder
+module Gpodder
 end
 
-# A global instance of GPodder::Client
-GPod = GPodder::Client.new
+# A global instance of Gpodder::Client
+Gpod = Gpodder::Client.new

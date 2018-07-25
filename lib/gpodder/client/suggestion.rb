@@ -1,4 +1,4 @@
-module GPodder
+module Gpodder
   class Client
     def suggestions(count)
       return false unless logged_in?

@@ -1,4 +1,4 @@
-module GPodder
+module Gpodder
   class Resource
     def initialize(hash)
       @data = OpenStruct.new(hash)

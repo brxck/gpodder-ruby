@@ -1,4 +1,4 @@
-module GPodder
+module Gpodder
   class Client
     def update_device(deviceid, caption, type)
       return false unless logged_in?

@@ -6,7 +6,7 @@ require_relative "client/requests"
 require_relative "client/directory"
 require_relative "client/authentication"
 
-module GPodder
+module Gpodder
   # Makes requests against gpodder.net API.
   class Client
     attr_reader :connect

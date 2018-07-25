@@ -1,4 +1,4 @@
-module GPodder
+module Gpodder
   class Client
     # Checks if login is valid, replaces connection object
     def login(username, password)

@@ -1,4 +1,4 @@
-module GPodder
+module Gpodder
   class Client
     def get(path, options = {})
       request(:get, path, options)
