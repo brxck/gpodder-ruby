@@ -1,7 +1,7 @@
-require_relative "gpodder/client"
-require_relative "gpodder/resource"
-require_relative "gpodder/collection"
-require_relative "gpodder/version"
+require "gpodder/client"
+require "gpodder/resource"
+require "gpodder/collection"
+require "gpodder/version"
 
 require "faraday"
 
