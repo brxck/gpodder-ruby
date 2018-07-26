@@ -4,8 +4,8 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "gpodder/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "gpodder-ruby"
-  spec.version       = Gpodder::Ruby::VERSION
+  spec.name          = "gpodder"
+  spec.version       = Gpodder::VERSION
   spec.authors       = ["Brock McElroy"]
   spec.email         = ["28877984+brxck@users.noreply.github.com"]
 
